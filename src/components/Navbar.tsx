@@ -35,7 +35,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/90 backdrop-blur-md shadow-sm"
+          ? "bg-sky-300/90 backdrop-blur-md shadow-sm"
           : "bg-transparent"
       }`}
     >
@@ -75,7 +75,7 @@ const Navbar = () => {
 
       {/* Menú móvil */}
       {isOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-md">
+        <div className="md:hidden bg-sky-300/95 backdrop-blur-md">
           <div className="px-4 pt-2 pb-4 space-y-1">
             {navLinks.map((link) => (
               <a
